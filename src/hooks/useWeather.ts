@@ -33,7 +33,7 @@ export default function useWeather() {
     setNotFound(false)
     setWeather(initialState)
     try {
-      const geoUrl = `http://api.openweathermap.org/geo/1.0/direct?q=${
+      const geoUrl = `https://api.openweathermap.org/geo/1.0/direct?q=${
         search.city
       },${search.country}&appid=${import.meta.env.VITE_API_KEY}`;
 
